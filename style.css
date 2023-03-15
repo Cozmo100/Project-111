@@ -1,0 +1,13 @@
+
+body{
+    font-family: monospace;
+    color: white;
+    background-color: rgb(171, 201, 107);
+    font-size: 200%;
+}
+
+#camera, #sv{
+    border: 2px dashed white;
+    height: 150px;
+    width: 200px;
+}

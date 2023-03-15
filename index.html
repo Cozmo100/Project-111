@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Project 110</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <center>
+        <br><br>
+        <h1>Hand Sign Recognition</h1>
+        <h3> 👍 👌 👎 🤞 🐍 </h3>
+        <br>
+        <h3>| Take a picture of the hand gesture so we can predict what it is |</h3>
+        <br><br>
+        
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          
+            <p class="svbg">Webcam View-</p>
+            <div id="camera"></div>
+            <br>
+            <button onclick="CaptImg()" class="btn btn-warning">Capture Image</button>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <h4 class="svbg">Prediction 1</h4>
+            <h3 id="handsign1"></h3>
+            <h4 id="hand1"></h4>
+            <br>
+            <h4 class="svbg">Prediction 2</h4>
+            <h3 id="handsign2"></h3>
+            <h4 id="hand2"></h4>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          
+            <p class="svbg">Snapshot View-</p>
+            <div id="sv"></div>
+            <br>
+            <button onclick="CaptImg()" class="btn btn-success">Recognise Hand</button>
+        </div>
+    
+   
+      </center>
+      <script src="main.js"></script>
+    </body>
+</html>
